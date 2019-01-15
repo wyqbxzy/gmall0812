@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fastdfs-client-java" />
+        <module name="gmall-api" />
+        <module name="gmall-cart-service" />
+        <module name="gmall-cart-web" />
+        <module name="gmall-common-util" />
+        <module name="gmall-list-service" />
+        <module name="gmall-list-web (1)" />
+        <module name="gmall-list-web (2)" />
+        <module name="gmall-manage-service" />
+        <module name="gmall-manage-web" />
+        <module name="gmall-order-service" />
+        <module name="gmall-order-web" />
+        <module name="gmall-passport-web" />
+        <module name="gmall-payment" />
+        <module name="gmall-service-util" />
+        <module name="gmall-user" />
+        <module name="gmall-user-web" />
+        <module name="gmall-web-util" />
+        <module name="gware-manage" />
+        <module name="maven-archiver" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

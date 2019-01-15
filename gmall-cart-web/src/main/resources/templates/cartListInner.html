@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+        <li th:each="cartInfo:${cartInfos}" >
+            <div> </div>
+
+            <div>
+                <ol>
+                    <li><input th:value="${cartInfo.skuId}" type="checkbox" th:checked="(${cartInfo.isChecked=='1'})?true:false"   class="check"   th:onchange="'checkSku(\''+${cartInfo.skuId}+'\',this.checked)'"  /></li>
+                    <li>
+                        <dt><img   th:src="${cartInfo.imgUrl}" alt=""></dt>
+                        <dd  onclick="toItem(1)">
+                            <p>
+                                <span  th:text="${cartInfo.skuName}">TCL 55A950C 55英寸32核</span>
+                            </p>
+                        </dd>
+                    </li>
+                    <li>
+                        <p class="dj"  th:text="${cartInfo.skuPrice}">￥4599.00</p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>-</span>
+                            <span th:text="${cartInfo.skuNum}">5</span>
+                            <span>+</span>
+                        </p>
+                    </li>
+                    <li style="font-weight:bold"><p class="zj"   th:text="${cartInfo.cartPrice}" >￥22995.00</p></li>
+                    <li>
+                        <p>删除</p>
+                    </li>
+                </ol>
+            </div>
+        </li>
+
+
+        <div>
+            <ol>
+                <li>总价:<span style="color:#e64346;font-weight:bold;font-size:16px;" class="fnt" th:text="${totalPrice}">￥0.00</span>  </li>
+            </ol>
+        </div>
+</body>
+</html>
